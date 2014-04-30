@@ -1,0 +1,34 @@
+{
+  "schema": {
+    "name": {
+      "type": "string",
+      "label": "What's your integration's name?",
+      "hint": "(eg. \"Google Analytics\")"
+    },
+    "assumesPageview": {
+      "type": "boolean",
+      "label": "Does your library always record a pageview when loaded?",
+      "hint": "(\"yes\" or \"no\", most do)"
+    },
+    "readyOnLoad": {
+      "type": "boolean",
+      "label": "Do we need to wait for your library to load to send it data?",
+      "hint": "(\"yes\" or \"no\", most don't)"
+    },
+    "identify":{
+      "type": "boolean",
+      "label": "Does your integration record a visitor's identity?",
+      "hint": "(\"yes\" or \"no\")"
+    },
+    "group": {
+      "type": "boolean",
+      "label": "Does your integration record accounts or organizations?",
+      "hint": "(\"yes\" or \"no\")"
+    },
+    "track": {
+      "type": "boolean",
+      "label": "Does your integration track a visitor's actions?",
+      "hint": "(\"yes\" or \"no\")"
+    }
+  }
+}
