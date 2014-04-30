@@ -1,7 +1,7 @@
 
 # khaos-analytics.js-integration
 
-A [Khaos](https://khaos.io) template that lets you quickly get started with writing a new integration for [Analytics.js](https://github.com/segmentio/analytics.js).
+A [Khaos](https://khaos.io) template that lets you quickly scaffold a new [Analytics.js](https://github.com/segmentio/analytics.js) integration.
 
 ## Installation
 
