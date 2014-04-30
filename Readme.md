@@ -5,7 +5,7 @@ A [Khaos](https://khaos.io) template that lets you quickly scaffold a new [Analy
 
 ## Installation
 
-    $ khaos --save segmentio/analytics.js-integration
+    $ khaos --save segmentio/khaos-analytics.js-integration analytics.js-integration
 
 ## Usage
 
