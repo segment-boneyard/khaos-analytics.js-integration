@@ -4,11 +4,11 @@ A [Khaos](https://khaos.io) template that lets you quickly scaffold a new [Analy
 
 ## Installation
 
-    $ khaos --save segmentio/khaos-analytics.js-integration analytics.js-integration
+    $ khaos install segmentio/khaos-analytics.js-integration
 
 ## Usage
 
-    $ khaos analytics.js-integration google-analytics
+    $ khaos create analytics.js-integration google-analytics
     
       What's your integration's name?: (eg. "Google Analytics") Google Analytics
       Does your library always record a pageview when loaded?: ("yes" or "no", most do) no
