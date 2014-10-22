@@ -1,6 +1,5 @@
 
 var integration = require('integration');
-var load = require('load-script');
 
 /**
  * Expose `plugin`.
@@ -15,9 +14,7 @@ module.exports = exports = function(analytics){
  */
 
 var {{pascalcase name}} = exports.Integration = integration('{{name}}'){{#assumesPageview}}
-  .assumesPageview(){{/assumesPageview}}{{#readyOnLoad}}
-  .readyOnLoad(){{else}}
-  .readyOnInitialize(){{/readyOnLoad}}
+  .assumesPageview(){{/assumesPageview}}
   // TODO: add your own options to the chained calls above. For example if
   // {{name}} requires an "API Key" you'd add an option like...
   //
@@ -46,24 +43,12 @@ var {{pascalcase name}} = exports.Integration = integration('{{name}}'){{#assume
   //
   //   window.__integration = {};
   //   window.__integration.apiKey = this.options.apiKey;
-  //   this.load();
-};
-
-/**
- * Load the {{name}} library.
- *
- * @param {Function} callback
- */
-
-{{pascalcase name}}.prototype.load = function(callback){
-  // TODO: fill in the logic required to load your integration's Javascript
-  // library from the servers. This should use the `load` dependency from the
-  // top of the file.
+  //   this.load(this.ready);
   //
-  // Here's what a normal `load` method might look like:
-  //
-  //   var url = '//integration.com/' + this.options.apiKey;
-  //   load(url, callback);
+  // Once the integration is ready to receive calls to `identify()`, `track()` etc..
+  // you must invoke `this.ready()`.
+  // for example if the integration is ready once it's loaded, you can call `this.load(this.ready)`
+  // if it's ready immediately after `initialize()` is called you can call `this.ready()` here.
 };
 
 /**

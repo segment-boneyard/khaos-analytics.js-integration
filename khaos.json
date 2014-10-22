@@ -10,11 +10,6 @@
       "label": "Does your library always record a pageview when loaded?",
       "hint": "(\"yes\" or \"no\", most do)"
     },
-    "readyOnLoad": {
-      "type": "boolean",
-      "label": "Do we need to wait for your library to load to send it data?",
-      "hint": "(\"yes\" or \"no\", most don't)"
-    },
     "identify":{
       "type": "boolean",
       "label": "Does your integration record a visitor's identity?",
