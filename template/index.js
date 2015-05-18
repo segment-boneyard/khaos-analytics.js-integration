@@ -1,5 +1,5 @@
 
-var integration = require('integration');
+var integration = require('analytics.js-integration');
 
 /**
  * Expose `plugin`.
