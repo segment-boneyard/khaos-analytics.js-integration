@@ -42,8 +42,7 @@ describe('{{name}}', function(){
     // integration('{{name}}')
     //   .global('__myIntegration')
     //   .option('apiKey', '')
-    analytics.compare({{pascalcase name}}, integration('{{name}}'){{#assumesPageview}}
-      .assumesPageview(){{/assumesPageview}})
+    analytics.compare({{pascalcase name}}, integration('{{name}}')
   });
 
   describe('before loading', function(){

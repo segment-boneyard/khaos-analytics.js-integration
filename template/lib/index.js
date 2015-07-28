@@ -1,5 +1,5 @@
 
-var integration = require('integration');
+var integration = require('analytics.js-integration');
 
 /**
  * Expose `plugin`.
@@ -13,8 +13,7 @@ module.exports = exports = function(analytics){
  * Expose `{{pascalcase name}}` integration.
  */
 
-var {{pascalcase name}} = exports.Integration = integration('{{name}}'){{#assumesPageview}}
-  .assumesPageview(){{/assumesPageview}}
+var {{pascalcase name}} = exports.Integration = integration('{{name}}')
   // TODO: add your own options to the chained calls above. For example if
   // {{name}} requires an "API Key" you'd add an option like...
   //
@@ -65,7 +64,7 @@ var {{pascalcase name}} = exports.Integration = integration('{{name}}'){{#assume
   //
   //   return window.__integration;
 };
-{{^assumesPageview}}
+
 /**
  * Trigger a page view.
  *
@@ -83,7 +82,7 @@ var {{pascalcase name}} = exports.Integration = integration('{{name}}'){{#assume
   //   var properties = page.properties();
   //   window.__integration.pageview(name, properties.url);
 };
-{{/assumesPageview}}{{#identify}}
+{{#identify}}
 /**
  * Identify a user.
  *
