@@ -1,19 +1,15 @@
 
-var integration = require('analytics.js-integration');
-
 /**
- * Expose `plugin`.
+ * Module dependencies.
  */
-
-module.exports = exports = function(analytics){
-  analytics.addIntegration({{pascalcase name}});
-};
+ 
+var integration = require('analytics.js-integration');
 
 /**
  * Expose `{{pascalcase name}}` integration.
  */
 
-var {{pascalcase name}} = exports.Integration = integration('{{name}}')
+var {{pascalcase name}} = module.exports = integration('{{name}}')
   // TODO: add your own options to the chained calls above. For example if
   // {{name}} requires an "API Key" you'd add an option like...
   //
