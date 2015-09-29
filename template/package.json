@@ -1,8 +1,8 @@
 {
   "name": "analytics.js-integration-{{slugcase name }}",
-  {{# isPrivate }}
+  {{#isPrivate}}
   "private": true,
-  {{/ isPrivate }}
+  {{/isPrivate}}
   "description": "The {{ name }} analytics.js integration.",
   "author": "Segment <friends@segment.com>",
   "license": "{{ license }}",
