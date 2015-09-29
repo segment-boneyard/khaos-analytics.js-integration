@@ -5,11 +5,6 @@
       "label": "What's your integration's name?",
       "hint": "(eg. \"Google Analytics\")"
     },
-    "assumesPageview": {
-      "type": "boolean",
-      "label": "Does your library always record a pageview when loaded?",
-      "hint": "(\"yes\" or \"no\", most do)"
-    },
     "identify":{
       "type": "boolean",
       "label": "Does your integration record a visitor's identity?",
